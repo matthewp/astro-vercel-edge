@@ -1,0 +1,13 @@
+---
+import React from '../components/React';
+Astro.response.headers.set("Cache-Control", `max-age=0, s-maxage=86400`);
+---
+
+<html>
+  <head>
+    <title>Testing</title>
+  </head>
+  <body>
+    <React />
+  </body>
+</html>
